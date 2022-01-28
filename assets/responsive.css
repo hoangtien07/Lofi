@@ -1,0 +1,89 @@
+@media (max-width:767px) {
+    /* Header */
+    .header {
+        padding: 0;
+        z-index: 1;
+        display: none;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header.hd-mobile {
+        display: flex;
+    }
+    .header .logo {
+        height: 80px;
+    }
+    .header .logo img {
+        height: 80px;
+    }
+    .signUp-btn {
+        margin-right: 8px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    /* Bg and option */
+    .bg-relative {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .option {
+        width: 100%;
+        flex-direction: row;
+        margin-right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+    .option-btn {
+        flex: 1;
+    }
+    .opt-border {
+        display: none;
+    }
+    .option__icon {
+        background-color: transparent;
+    }
+    #ob1 .option__icon {
+        border-radius: 0;
+    }
+    #ob4 .option__icon {
+        border-radius: 0;
+    }
+    .obh {
+        display: none !important;
+    }
+    .sub-opt {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: -1px;
+    }
+    #sub3 {
+        transform: translateY(0px);
+    }
+    #sub4 {
+        transform: translateY(0px);
+    }
+    #effect-list.active {
+        max-height: 313px;
+        overflow: scroll;
+    }
+    .title-sub {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 20px 0 15px 0;
+    }
+    .sub-des {
+        margin-top: 5px;
+    }
+    /* Control */
+    .control {
+        bottom: 80px;
+    }
+    .control>div>img {
+        max-width: 62px;
+        min-width: 48px;
+    }
+}

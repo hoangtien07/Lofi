@@ -1,0 +1,719 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --color-primary: #f3a952;
+    --color-secondary: #8b8aa2;
+    --color-bg-200: #14141d;
+    --color-bg-dark: #070707;
+    --color-item-unactive: #2C2C2E;
+    --filter-primary: invert(81%) sepia(65%) saturate(2240%) hue-rotate(324deg) brightness(108%) contrast(91%);
+}
+
+
+/* reset css & set font*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white)
+}
+
+body {
+    background: #bbb;
+    font-size: 1.8rem;
+}
+
+.test {
+    width: 100%;
+    height: 5000px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .5;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.db {
+    display: block !important;
+}
+
+
+/* CSS chung */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex {
+    display: inline-flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-svg {
+    filter: invert(67%) sepia(58%) saturate(490%) hue-rotate(345deg) brightness(120%) contrast(92%);
+}
+
+.filter-svg-unactive {
+    filter: invert(10%) sepia(2%) saturate(6734%) hue-rotate(202deg) brightness(93%) contrast(88%);
+}
+
+
+/* Main */
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main::-webkit-scrollbar {
+    width: 0 !important;
+    display: block;
+}
+
+
+/* Header */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 80px;
+    width: 100vw;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.header.hd-mobile {
+    display: none;
+}
+
+.header .logo {
+    height: 80px;
+}
+
+.header .logo img {
+    height: 100px;
+    margin-bottom: -20px;
+}
+
+.nav-btn {
+    min-width: unset;
+    font-weight: 700;
+    font-size: inherit;
+    padding: 18px;
+    cursor: pointer;
+    color: var(--white);
+    transition: .3s ease;
+    position: relative;
+}
+
+.nav-btn:hover {
+    color: #ccc;
+}
+
+
+/* Subnav-header */
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    padding: 4px 20px;
+    border-radius: 8px;
+    color: #fff;
+    transform-origin: center top;
+}
+
+.nav-btn:hover .subnav {
+    display: block;
+    animation: fade .3s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.subnav-btn {
+    padding: 4px 0;
+    transition: .3s ease;
+}
+
+.subnav-btn:hover {
+    color: #ccc;
+}
+
+
+/* Action bar */
+
+.action {
+    align-items: center;
+}
+
+.action button {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--white);
+    transition: all .3s ease;
+}
+
+.login-btn {
+    padding: 18px;
+}
+
+.signUp-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.share-btn {
+    font-size: 1.2rem !important;
+    margin: 0 12px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.zoom-btn {
+    margin: 0 12px;
+}
+
+.ant-switch {
+    margin: 0 16px;
+    width: 60px;
+    height: 30px;
+    background: #f3a952;
+    border-radius: 15px;
+    position: relative;
+}
+
+.ant-switch__handle {
+    position: absolute;
+    top: 50%;
+    left: 34px;
+    transform: translateY(-50%);
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    transition: .8s ease;
+}
+
+.ant-switch__inner {
+    justify-content: space-around;
+}
+
+
+/* Video */
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-video::-webkit-scrollbar {
+    width: 0 !important;
+    display: block;
+}
+
+.main-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block;
+}
+
+
+/* Thanh Dieu Khien Nhac */
+
+.control {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.control>div {
+    margin: 0 8px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.control>div:hover {
+    opacity: .5;
+}
+
+.control>div>img {
+    max-width: 54px;
+    min-width: 36px;
+}
+
+
+/* Thanh tùy chỉnh */
+
+.bg-relative {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.option {
+    position: relative;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.option-btn {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.option__icon {
+    font-size: 28px;
+    line-height: 70px;
+    display: block;
+    background-color: #000;
+    opacity: .6;
+    color: rgba(136, 136, 136, 0.5);
+    transition: color .3s ease;
+}
+
+.opt-border {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 2px;
+    width: 50px;
+    background: #ffffffc0;
+    z-index: -1;
+}
+
+#ob1 .option__icon {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+#ob4 .option__icon {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.obh {
+    display: none;
+    position: absolute;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.obh-t {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) scaleY(-1);
+}
+
+.obh-b {
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.option__icon.active {
+    background: #000;
+    opacity: 1;
+    transition: color .3s ease;
+    color: var(--color-primary);
+    display: block !important;
+}
+
+.sub-opt {
+    background: #070707;
+    width: 350px;
+    height: fit-content;
+    position: relative;
+    border-radius: 24px;
+    padding: 0 32px;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sub-opt.active {
+    display: block;
+}
+
+.title-sub {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 0;
+}
+
+.sub-des {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.sub-btn {
+    margin: 32px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    background: var(--color-primary);
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 22px;
+    transition: .3s ease;
+}
+
+#sub2 {
+    transform: translateY(0px);
+}
+
+#sub3 {
+    transform: translateY(30px);
+}
+
+#sub4 {
+    transform: translateY(116px);
+}
+
+.sub-mood {
+    height: 84px;
+    margin: 15px 0;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.sub-mood__item {
+    width: 30%;
+    height: 100%;
+    background-color: var(--color-bg-200);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.sub-mood__title {
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.sub-mood__svg {
+    height: 36px;
+    width: auto;
+    fill: var(--color-item-unactive);
+}
+
+.sub-mood__item.active .sub-mood__svg {
+    fill: var(--color-primary);
+}
+
+.music-volume {
+    margin: 15px 0;
+}
+
+.ms-volume__icon {
+    transform: translateY(-3px);
+    fill: var(--color-primary);
+}
+
+.ms-volume__input {
+    flex: 1;
+    display: block;
+    margin: auto 24px;
+    height: 12px;
+    width: auto;
+    background: linear-gradient(to right, #f3a952 0%, #f3a952 44%, #14141d 44%, #14141d 100%);
+    -webkit-appearance: none;
+    border-radius: 6px;
+}
+
+.ms-volume__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+#effect-list {
+    max-height: 122px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+#effect-list.active {
+    max-height: 354px;
+    overflow: scroll;
+}
+
+#effect-list::-webkit-scrollbar {
+    display: none;
+}
+
+.effect-item {
+    margin-bottom: 15px;
+    height: 26px;
+}
+
+.effect-name {
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    flex-basis: 50%;
+}
+
+.effect-volumn__input {
+    flex: 1;
+    height: 24px;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #f3a952 0%, #14141d 0%, #14141d 100%);
+    border-radius: 13px;
+}
+
+.effect-volumn__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: #fff;
+}
+
+#city::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/city-active.a89e0974.svg');
+}
+
+#rain_street::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/rain-city-active.2b132a63.svg');
+}
+
+#fireplace::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/fire-place-active.6c73e3d4.svg');
+}
+
+#fire::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/campfire-active.11ae9b1a.svg');
+}
+
+#forest::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/forest-active.557577a7.svg');
+}
+
+#rain_forest::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/rain-forest-active.c1cb0f00.svg');
+}
+
+#waves::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/fan-active.5db5555f.svg');
+}
+
+#fan::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/waves-active.fc53117a.svg');
+}
+
+#storm::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/summer-storm-active.a1d5ef8d.svg');
+}
+
+#river::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/river-active.4f66256f.svg');
+}
+
+#birds::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/bird-active.8e06b1c4.svg');
+}
+
+#people::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/people-active.8a5ffe7f.svg');
+}
+
+#wind::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/wind_active.8c1a9559.svg');
+}
+
+#ocean::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/ocean_active.a822faff.svg');
+}
+
+#snow::-webkit-slider-thumb {
+    background: url('https://lofi.co/static/media/snow_active.6d21fdcc.svg');
+}
+
+.sub-footer {
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    background: var(--color-bg-200);
+    margin: 0 -32px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.sub-footer:hover {
+    opacity: .5;
+}
+
+
+/* Huong dan */
+
+.tutorial {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    z-index: 5;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.tutorial::-webkit-scrollbar {
+    width: 0 !important;
+    display: block;
+}
+
+.tutorial.active {
+    display: block;
+}
+
+.tut__hd {
+    height: 20%;
+}
+
+.tut__hd-logo {
+    height: 50%;
+}
+
+.tut__main {
+    flex: 1;
+    justify-content: space-around;
+}
+
+.tut__item {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tut__vid {
+    height: 350px;
+    width: auto;
+}
+
+.tut__title {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 36px;
+}
+
+.tut__des {
+    display: block;
+    text-align-last: left;
+    font-size: 14px;
+    margin: 16px 0;
+    line-height: 24px;
+}
+
+.tut-close {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--color-primary);
+    border-radius: 20px;
+    color: #000;
+    opacity: .5;
+    transition: .3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    align-self: flex-end;
+    margin: 100px 0;
+}
+
+.tut-close:hover {
+    opacity: 1;
+}

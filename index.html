@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="shortcut icon" href="./assets/img_video/favicon.ico" type="image/x-icon">
+    <title>lofi.co</title>
+</head>
+
+<body>
+    <div class="main">
+        <audio class="music"></audio>
+        <div class="bg-relative relative">
+            <div class="header flex">
+                <div class="logo"><img src="https://lofi.co/static/media/logo.0cbf9e63.gif"></div>
+                <div class="nav flex">
+                    <div class="tutorial flex-col">
+                        <div class="tut__hd flex-center">
+                            <img src="https://lofi.co/static/media/logo.0cbf9e63.gif" class="tut__hd-logo">
+                        </div>
+                        <div class="tut__main flex">
+                            <div class="tut__item">
+                                <video loop src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tutorial/Video%201%20-%20Mixer.mp4" class="tut__vid"></video>
+                                <div class="tut__title">The Perfect Playlist<br>With One Click</div>
+                                <div class="tut__des">Hit play and get into the zone instantly. No ads. No distracting lyrics.<br>3 Stations to suit your mood: chill, jazzy or sleepy.</div>
+                            </div>
+                            <div class="tut__item">
+                                <video loop src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tutorial/Video%204%20-%20Mixer%20Environment.mp4" class="tut__vid"></video>
+                                <div class="tut__title">Cut Out Distractions<br>With Peaceful Sounds</div>
+                                <div class="tut__des">Drown out even the noisiest neighbour with soothing background sounds. Each artwork comes with adjustable sounds like rain, waves or birds. Some sounds change the scene's visuals.</div>
+                            </div>
+                            <button type="button" class="tut-close">Close</button>
+                        </div>
+                    </div>
+                    <div class="nav-btn" id="tutorial">How it works</div>
+                    <div class="nav-btn">Pricing</div>
+                    <div class="nav-btn">Contact us</div>
+                    <div class="nav-btn">More
+                        <div class="subnav">
+                            <div class="subnav-btn">About us</div>
+                            <div class="subnav-btn">Submissions</div>
+                            <div class="subnav-btn">Spotify</div>
+                        </div>
+                    </div>
+                    <div class="nav-btn">Merch</div>
+                </div>
+                <div class="action flex">
+                    <button class="ant-switch" id="ant-switch" type="button" role="switch" aria-checked="false">
+                    <div class="ant-switch__handle"></div>
+                    <div class="ant-switch__inner in-flex flex-center">
+                        <img src="https://lofi.co/static/media/night.5e06c080.svg" alt="">
+                        <img src="https://lofi.co/static/media/day.d259f96b.svg" alt="">
+                    </div>
+                </button>
+                    <button class="zoom-btn">
+                   <img src="https://lofi.co/static/media/fullscreen.a76b5d15.svg" alt="">
+                </button>
+                    <button class="share-btn">Share</button>
+                    <button class="signUp-btn">Sign up</button>
+                    <button class="login-btn">Login</button>
+                </div>
+            </div>
+            <div class="header hd-mobile">
+                <div class="logo"><img src="https://lofi.co/static/media/logo.0cbf9e63.gif"></div>
+                <div class="tutorial flex-col">
+                    <div class="tut__hd flex-center">
+                        <img src="https://lofi.co/static/media/logo.0cbf9e63.gif" class="tut__hd-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-video">
+                <video autoplay loop class="main-video" muted="muted">
+                </video>
+            </div>
+            <div class="bg-video">
+                <video autoplay loop class="main-video" muted="muted">
+                </video>
+            </div>
+            <div class="control flex-center">
+                <div class="prev">
+                    <img src="https://lofi.co/static/media/previous.3b347466.svg" alt="">
+                </div>
+                <div class="play">
+                </div>
+                <div class="next">
+                    <img src="https://lofi.co/static/media/next.9551d6f2.svg" alt="">
+                </div>
+            </div>
+            <div class="sub-opt" id="sub1">
+                <h4 class="title-sub">Mood</h4>
+                <div class="flex sub-mood">
+                    <div class="sub-mood__item flex-col flex-center" id="chill">
+                    </div>
+                    <div class="sub-mood__item flex-col flex-center" id="jazzy">
+                    </div>
+                    <div class="sub-mood__item flex-col flex-center" id="sleepy">
+                    </div>
+                </div>
+                <div class="flex music-volume">
+                    <img src="https://lofi.co/static/media/volume_low.b33e70b7.svg" class="ms-volume__icon filter-svg">
+                    <input type="range" min="0" max="100" step="1" value="44" class="ms-volume__input" id="ms-volumn__input">
+                    <img src="https://lofi.co/static/media/volume.c87198cb.svg" class="ms-volume__icon filter-svg">
+                </div>
+                <h4 class="title-sub">Background noises</h4>
+                <div class="flex-col effect-volume" id="effect-list">
+                </div>
+                <div class="sub-footer">Mix Mode</div>
+            </div>
+            <div class="sub-opt" id="sub2">
+                <h4 class="title-sub">Save Templates</h4>
+                <p class="sub-des">This feature is coming soon</p>
+                <button type="button" class="sub-btn">Close</button>
+            </div>
+            <div class="sub-opt" id="sub3">
+                <h4 class="title-sub">Change Set</h4>
+                <p class="sub-des">This feature is coming soon</p>
+                <button type="button" class="sub-btn">Close</button>
+            </div>
+            <div class="sub-opt" id="sub4">
+                <h4 class="title-sub">Focus Mode</h4>
+                <p class="sub-des">This feature is coming soon</p>
+                <button type="button" class="sub-btn">Close</button>
+            </div>
+            <div class="option flex-col flex-center">
+                <div class="option-btn" id="ob1">
+                    <img src="https://lofi.co/static/media/lateral_bottom.849fd226.svg" alt="" class="obh">
+                    <i class="fas fa-sliders-h option__icon"></i>
+                    <div class="opt-border"></div>
+                </div>
+                <div class="option-btn" id="ob2">
+                    <i class="far fa-map option__icon"></i>
+                    <div class="opt-border"></div>
+                </div>
+                <div class="option-btn" id="ob3">
+                    <i class="fas fa-film option__icon"></i>
+                    <div class="opt-border"></div>
+                </div>
+                <div class="option-btn" id="ob4">
+                    <img src="https://lofi.co/static/media/lateral_bottom.849fd226.svg" alt="" class="obh">
+                    <i class="far fa-dot-circle option__icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
