@@ -4,8 +4,9 @@ const $$ = document.querySelectorAll.bind(document)
 // Loader
 
 window.onload = function() {
+    var loader = $('.preload');
+    loader.style.opacity = '0'
     setTimeout(function() {
-        var loader = $('.preload');
         loader.className = "preload active";
     }, 1000)
 }
@@ -274,6 +275,36 @@ const app = {
             }
         }
         changeBgFunc()
+
+        function preload(url, cFunction) {
+            var xhttp;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    cFunction(this);
+                }
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+
+        function myFunction(xhttp) {
+            document.getElementById("demo").innerHTML =
+                xhttp.responseText;
+        }
+
+        function preload() {
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20Day%20112521%20%281%29.mp4", true);
+            xhttp.send();
+        }
+
         changeBg.onclick = () => {
             if (typeWeather[0] == 0) {
                 typeWeather[0] = 1
@@ -396,9 +427,6 @@ const app = {
 
         videoBg[1].innerHTML = '<source src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20STARRY%20NIGHT%20-.mp4">'
     },
-    handle: function() {
-
-    }
 }
 
 app.start()
