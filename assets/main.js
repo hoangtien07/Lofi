@@ -193,16 +193,17 @@ const app = {
         // };
 
         // Range sound effect
-
-        for (let e of app.effectMusic) {
-            effectList.innerHTML += `
-            <div class="effect-item flex">
-            <div class="effect-name">${e.name}</div>
-            <input type="range" min="0" max="100" step="1" value="0" class="effect-volumn__input" id="${e.type}">
-            <audio src="${e.url}" loop></audio>
-            </div>
-            `
-        }
+        setTimeout(function() {
+            for (let e of app.effectMusic) {
+                effectList.innerHTML += `
+                <div class="effect-item flex">
+                <div class="effect-name">${e.name}</div>
+                <input type="range" min="0" max="100" step="1" value="0" class="effect-volumn__input" id="${e.type}">
+                <audio src="${e.url}" loop></audio>
+                </div>
+                `
+            }
+        }, 1000)
 
         const inputRange = $$('.effect-volumn__input')
         const audioEffectList = $$('.effect-item>audio')
@@ -290,8 +291,11 @@ const app = {
             }
         }
         setTimeout(function() {
-            $('.preload').className = "preload active";
-        }, 500)
+            $('.preload').style.opacity = '0'
+            setTimeout(function() {
+                $('.preload').className = "preload active";
+            })
+        }, 2000)
 
         // function loadVid(url, cFunction) {
         //     var xhttp;
@@ -328,22 +332,24 @@ const app = {
             }
         }
 
-        const rain = $('#rain_street')
-        rain.oninput = function() {
-            this.style.background = 'linear-gradient(to right, #f3a952 0%, #f3a952 ' + this.value + '%, #14141d ' + this.value + '%, #14141d 100%)'
-            if (this.value == 0) {
-                audioEffectList[1].pause()
-                typeWeather[1] = 0
-                changeBgFunc()
-            } else {
-                audioEffectList[1].play()
-                audioEffectList[1].volume = this.value / 100
-                typeWeather[1] = 1
-                this.onmouseup = () => {
+        setTimeout(function() {
+            const rain = $('#rain_street')
+            rain.oninput = function() {
+                this.style.background = 'linear-gradient(to right, #f3a952 0%, #f3a952 ' + this.value + '%, #14141d ' + this.value + '%, #14141d 100%)'
+                if (this.value == 0) {
+                    audioEffectList[1].pause()
+                    typeWeather[1] = 0
                     changeBgFunc()
+                } else {
+                    audioEffectList[1].play()
+                    audioEffectList[1].volume = this.value / 100
+                    typeWeather[1] = 1
+                    this.onmouseup = () => {
+                        changeBgFunc()
+                    }
                 }
             }
-        }
+        }, 2000)
 
         // Option hover css
 
