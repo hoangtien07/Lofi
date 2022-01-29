@@ -289,27 +289,30 @@ const app = {
                 changeBg.style.background = 'rgba(0,0,0,.25)'
             }
         }
+        setTimeout(function() {
+            $('.preload').className = "preload active";
+        }, 500)
 
-        function loadVid(url, cFunction) {
-            var xhttp;
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    cFunction(this);
-                }
-            };
-            xhttp.open("GET", url, true);
-            xhttp.send();
-        }
+        // function loadVid(url, cFunction) {
+        //     var xhttp;
+        //     xhttp = new XMLHttpRequest();
+        //     xhttp.onreadystatechange = function() {
+        //         if (this.readyState == 4 && this.status == 200) {
+        //             cFunction(this);
+        //         }
+        //     };
+        //     xhttp.open("GET", url, true);
+        //     xhttp.send();
+        // }
 
-        function removeLoader() {
-            var loader = $('.preload');
-            loader.style.opacity = '0'
-            setTimeout(function() {
-                loader.className = "preload active";
-            }, 500)
-        }
-        loadVid("https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20Day%20112521%20%281%29.mp4", removeLoader);
+        // function removeLoader() {
+        //     var loader = $('.preload');
+        //     loader.style.opacity = '0'
+        //     setTimeout(function() {
+        //         loader.className = "preload active";
+        //     }, 500)
+        // }
+        // loadVid("https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20Day%20112521%20%281%29.mp4", removeLoader);
 
         changeBgFunc()
 
