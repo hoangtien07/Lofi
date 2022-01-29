@@ -291,7 +291,7 @@ const app = {
         }
         setTimeout(function() {
             $('.preload').className = "preload active";
-        }, 500)
+        }, 2000)
 
         // function loadVid(url, cFunction) {
         //     var xhttp;
