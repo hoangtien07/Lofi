@@ -1,6 +1,15 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
+// Loader
+
+window.onload = function() {
+    setTimeout(function() {
+        var loader = $('.preload');
+        loader.className = "preload active";
+    }, 1000)
+}
+
 //Zoom screen
 
 const html = $('html')

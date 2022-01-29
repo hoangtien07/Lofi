@@ -717,3 +717,23 @@ input {
 .tut-close:hover {
     opacity: 1;
 }
+
+
+/* Loader */
+
+.preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0;
+}
+
+.preload.active {
+    display: none;
+    opacity: 1;
+}
