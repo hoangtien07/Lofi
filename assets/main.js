@@ -64,7 +64,7 @@ const app = {
     music: {
         chill: [{ url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_1.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_2.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_3.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_4.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_5.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_6.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_7.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_8.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_9.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_10.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_11.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_12.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_13.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_14.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_15.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_16.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_17.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_18.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_19.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_20.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_21.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_22.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_23.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_24.mp3" }],
         jazzy: [{ url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_1.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_2.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_3.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_4.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_5.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_6.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_7.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_8.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_9.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_10.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_11.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_12.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_13.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_14.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_15.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_16.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_17.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_18.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_19.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_20.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_21.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_22.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_23.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_24.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_25.mp3" }],
-        sleepy: [{ url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_1.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_2.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_3.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_4.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_4.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_5.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_6.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_7.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_8.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_9.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_10.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_11.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_12.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_13.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_14.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_15.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_16.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_17.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_18.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_19.mp3" }]
+        sleepy: [{ url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_1.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_2.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_3.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_4.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_5.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_6.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_7.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_8.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_9.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_10.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_11.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_12.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_13.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_14.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_15.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_16.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_17.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_18.mp3" }, { url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_19.mp3" }]
     },
 
     //Hiệu ứng âm thanh
@@ -107,36 +107,51 @@ const app = {
 
 
         // Next/prev song Btn + Set up list main music
+        var lengthMusic = [24, 25, 19]
+        var historyObj = {
+            0: [],
+            1: [],
+            2: []
+        }
+        for (let key in historyObj) {
+            while (historyObj[`${key}`].length < lengthMusic[`${key}`]) {
+                let r = Math.floor(Math.random() * lengthMusic[`${key}`]);
+                if (historyObj[`${key}`].indexOf(r) === -1) historyObj[`${key}`].push(r);
+            }
+        }
         var historySong = []
-        var firtType = 0
-        var lengthMusic = Object.values(app.music)[firtType].length
-        var listMusic = Object.values(app.music)[firtType]
+
+        var lengthCurrentMusic = 0
+        var listMusic = Object.values(app.music)[0]
         var prevType = 0
         var indexMusic = 0
-        while (historySong.length < lengthMusic - 1) {
-            let r = Math.floor(Math.random() * lengthMusic + 1);
-            if (historySong.indexOf(r) === -1) historySong.push(r);
-        }
 
         function typeMusic(index) {
-            lengthMusic = Object.values(app.music)[index].length
-            let randomIndex = Math.floor(Math.random() * lengthMusic)
+            historySong = historyObj[`${index}`]
+            lengthCurrentMusic = lengthMusic[index]
+            indexMusic = Math.floor(Math.random() * lengthCurrentMusic)
             listMusic = Object.values(app.music)[index]
             prevType = index
-            indexMusic = randomIndex
-            if (listMusic[historySong[randomIndex]] === undefined) { return }
-            audio.innerHTML = `<source  src="${listMusic[historySong[randomIndex]].url}" type="audio/mp3">`
+            audio.innerHTML = `<source  src="${listMusic[historySong[indexMusic]].url}" type="audio/mp3">`
         }
 
         typeMusic(0)
 
+        audio.onended = function() {
+            indexMusic++
+            if (indexMusic == lengthCurrentMusic) {
+                indexMusic = 0;
+            }
+            audio.innerHTML = `<source src="${listMusic[historySong[indexMusic]].url}" type="audio/mp3">`
+            audio.load()
+            audio.play()
+        };
+
         typeItem.forEach((e, index) => {
             e.onclick = () => {
                 if (prevType != index) {
+                    typeItem[prevType].classList.remove('active')
                     typeMusic(index)
-                    $('#chill').classList.remove('active')
-                    $('#jazzy').classList.remove('active')
-                    $('#sleepy').classList.remove('active')
                     e.classList.add('active')
                     audio.load()
                     audio.play()
@@ -148,9 +163,9 @@ const app = {
         prevBtn.onclick = function() {
             indexMusic--
             if (indexMusic == -1) {
-                indexMusic = lengthMusic - 1;
+                indexMusic = lengthCurrentMusic - 1;
             }
-            audio.innerHTML = `<source src="${listMusic[historySong[indexMusic+1]].url}" type="audio/mp3">`
+            audio.innerHTML = `<source src="${listMusic[historySong[indexMusic]].url}" type="audio/mp3">`
             checkPlayMusic = true
             playBtn.innerHTML = `<img src="https://lofi.co/static/media/pause.4ac70926.svg" alt="">`
             audio.load()
@@ -159,10 +174,10 @@ const app = {
 
         nextBtn.onclick = function() {
             indexMusic++
-            if (indexMusic == lengthMusic) {
+            if (indexMusic == lengthCurrentMusic) {
                 indexMusic = 0;
             }
-            audio.innerHTML = `<source src="${listMusic[historySong[indexMusic+1]].url}" type="audio/mp3">`
+            audio.innerHTML = `<source src="${listMusic[historySong[indexMusic]].url}" type="audio/mp3">`
             checkPlayMusic = true
             playBtn.innerHTML = `<img src="https://lofi.co/static/media/pause.4ac70926.svg" alt="">`
             audio.load()
@@ -170,11 +185,12 @@ const app = {
         }
 
         // End music and next
-        audio.onended = function() {
-            indexMusic++
-            audio.innerHTML = `<source src="${listMusic[historySong[indexMusic+1]].url}" type="audio/mp3">`
-            audio.play()
-        };
+
+        // audio.onended = function() {
+        //     indexMusic++
+        //     audio.innerHTML = `<source src="${listMusic[historySong[indexMusic+1]].url}" type="audio/mp3">`
+        //     audio.play()
+        // };
 
         // Range sound effect
 
@@ -193,7 +209,6 @@ const app = {
 
         for (let i = 0; i < inputRange.length; i++) {
             inputRange[i].oninput = function() {
-                console.log(this)
                 this.style.background = 'linear-gradient(to right, #f3a952 0%, #f3a952 ' + this.value + '%, #14141d ' + this.value + '%, #14141d 100%)'
                 if (this.value == 0) {
                     audioEffectList[i].pause()
