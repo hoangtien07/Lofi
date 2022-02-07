@@ -92,6 +92,32 @@ const app = {
         // Khai báo biến
         const _this = this
 
+        // Tạo list audio vào body
+        // for (let i = 0; i < app.music['chill'].length; i++) {
+        //     let newAudio = document.createElement('audio')
+        //     newAudio.innerHTML = `<source src='https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_${i+1}.mp3'>`
+        //     $('.main').appendChild(newAudio)
+        //     console.log(newAudio)
+        // }
+        // for (let i = 0; i < app.music['jazzy'].length; i++) {
+        //     let newAudio = document.createElement('audio')
+        //     newAudio.innerHTML = `<source src='https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_${i+1}.mp3'>`
+        //     $('.main').appendChild(newAudio)
+        // }
+        // for (let i = 0; i < app.music['sleepy'].length; i++) {
+        //     let newAudio = document.createElement('audio')
+        //     newAudio.innerHTML = `<source src='https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_${i+1}.mp3'>`
+        //     $('.main').appendChild(newAudio)
+        // }
+        // for (let i = 0; i < app.effectMusic.length; i++) {
+        //     let newAudio = document.createElement('audio')
+        //     newAudio.innerHTML = `<source src='${app.effectMusic[i].url}'>`
+        //     $('.main').appendChild(newAudio)
+        // }
+        // $$('audio').forEach((e, index) => {
+        //         e.autoplay = true
+        //     })
+
         // Play/Pause
         playBtn.onclick = function() {
             if (!checkPlayMusic) {
@@ -133,6 +159,7 @@ const app = {
             listMusic = Object.values(app.music)[index]
             prevType = index
             audio.innerHTML = `<source  src="${listMusic[historySong[indexMusic]].url}" type="audio/mp3">`
+            console.log(`${listMusic[historySong[indexMusic]].url}`)
         }
 
         typeMusic(0)
@@ -193,17 +220,15 @@ const app = {
         // };
 
         // Range sound effect
-        setTimeout(function() {
-            for (let e of app.effectMusic) {
-                effectList.innerHTML += `
+        for (let e of app.effectMusic) {
+            effectList.innerHTML += `
                 <div class="effect-item flex">
                 <div class="effect-name">${e.name}</div>
                 <input type="range" min="0" max="100" step="1" value="0" class="effect-volumn__input" id="${e.type}">
                 <audio src="${e.url}" loop></audio>
                 </div>
                 `
-            }
-        }, 1000)
+        }
 
         const inputRange = $$('.effect-volumn__input')
         const audioEffectList = $$('.effect-item>audio')
@@ -219,6 +244,7 @@ const app = {
                 }
             }
         }
+
 
         mainMusicBtn.oninput = function() {
             if (this.value == 0) {
@@ -332,24 +358,22 @@ const app = {
             }
         }
 
-        setTimeout(function() {
-            const rain = $('#rain_street')
-            rain.oninput = function() {
-                this.style.background = 'linear-gradient(to right, #f3a952 0%, #f3a952 ' + this.value + '%, #14141d ' + this.value + '%, #14141d 100%)'
-                if (this.value == 0) {
-                    audioEffectList[1].pause()
-                    typeWeather[1] = 0
+        const rain = $('#rain_street')
+        rain.oninput = function() {
+            this.style.background = 'linear-gradient(to right, #f3a952 0%, #f3a952 ' + this.value + '%, #14141d ' + this.value + '%, #14141d 100%)'
+            if (this.value == 0) {
+                audioEffectList[1].pause()
+                typeWeather[1] = 0
+                changeBgFunc()
+            } else {
+                audioEffectList[1].play()
+                audioEffectList[1].volume = this.value / 100
+                typeWeather[1] = 1
+                this.onmouseup = () => {
                     changeBgFunc()
-                } else {
-                    audioEffectList[1].play()
-                    audioEffectList[1].volume = this.value / 100
-                    typeWeather[1] = 1
-                    this.onmouseup = () => {
-                        changeBgFunc()
-                    }
                 }
             }
-        }, 2000)
+        }
 
         // Option hover css
 
@@ -424,6 +448,7 @@ const app = {
         const tutVid = $$('.tut__vid')
         tutBtn.onclick = () => {
             tut.classList.add('active')
+            tut.scrollTo(0, 0)
             tutVid[0].play()
             tutVid[1].play()
         }

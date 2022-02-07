@@ -2,14 +2,24 @@
     /* Header */
     .header {
         padding: 0;
-        z-index: 1;
-        display: none;
+        display: flex;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
         justify-content: space-between;
         align-items: center;
     }
-    .header.hd-mobile {
-        display: flex;
+    .nav {
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .nav-btn {
+        display: none;
+    }
+    #tutorial {
+        font-size: 16px;
+        display: block;
+    }
+    .action {
+        zoom: .8;
     }
     .header .logo {
         height: 80px;
@@ -17,17 +27,24 @@
     .header .logo img {
         height: 80px;
     }
+    .zoom-btn {
+        display: none;
+    }
+    .share-btn {
+        display: none;
+    }
     .signUp-btn {
-        margin-right: 8px;
-        height: 40px;
-        font-size: 16px;
-        font-weight: 500;
+        display: none;
+    }
+    .login-btn {
+        display: none;
     }
     /* Bg and option */
     .bg-relative {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        overflow: scroll;
     }
     .option {
         width: 100%;
@@ -36,6 +53,9 @@
         background-color: rgba(0, 0, 0, 0.6);
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
+        position: fixed;
+        left: 0;
+        bottom: 0;
     }
     .option-btn {
         flex: 1;
@@ -56,9 +76,12 @@
         display: none !important;
     }
     .sub-opt {
+        position: fixed;
+        left: 0;
+        bottom: 70px;
         width: 100%;
         border-radius: 0;
-        margin-bottom: -1px;
+        z-index: 5;
     }
     #sub3 {
         transform: translateY(0px);
@@ -78,12 +101,21 @@
     .sub-des {
         margin-top: 5px;
     }
+    .tut__des {
+        padding: 0 16px;
+    }
+    .tut__item {
+        margin-bottom: 40px;
+    }
+    .tut-close {
+        margin: 0px 0 60px 0;
+    }
     /* Control */
     .control {
-        bottom: 80px;
+        bottom: 82px;
     }
-    .control>div>img {
-        max-width: 62px;
-        min-width: 48px;
+    /* Video Bg */
+    .main-video {
+        width: auto;
     }
 }
