@@ -159,6 +159,7 @@ const app = {
             listMusic = Object.values(app.music)[index]
             prevType = index
             audio.innerHTML = `<source  src="${listMusic[historySong[indexMusic]].url}" type="audio/mp3">`
+            console.log(`${listMusic[historySong[indexMusic]].url}`)
         }
 
         typeMusic(0)
@@ -276,7 +277,7 @@ const app = {
 
         function changeBgFunc() {
             if (typeWeather[0] == 0 && typeWeather[1] == 0) {
-                videoBg[0].innerHTML = '<source src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20Day%20112521%20%281%29.mp4">'
+                videoBg[0].innerHTML = '<source src="./assets/scenes/chill-vibes/BDR%20Day%20112521.mp4">'
                 videoBg[0].style.opacity = '1'
                 videoBg[1].style.opacity = '0'
                 videoBg[0].load()
@@ -284,7 +285,7 @@ const app = {
                 changeBgBtn.style.left = '34px'
                 changeBg.style.background = '#f3a952'
             } else if (typeWeather[0] == 1 && typeWeather[1] == 0) {
-                videoBg[1].innerHTML = '<source src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20STARRY%20NIGHT%20-.mp4">'
+                videoBg[1].innerHTML = '<source src="./assets/scenes/chill-vibes/BDR%20STARRY%20NIGHT%20-.mp4">'
                 videoBg[0].style.opacity = '0'
                 videoBg[1].style.opacity = '1'
                 videoBg[1].load()
@@ -292,7 +293,7 @@ const app = {
                 changeBgBtn.style.left = '4px'
                 changeBg.style.background = 'rgba(0,0,0,.25)'
             } else if (typeWeather[0] == 0 && typeWeather[1] == 1) {
-                videoBg[1].innerHTML = '<source src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20RAINY%20DAY.mp4">'
+                videoBg[1].innerHTML = '<source src="./assets/scenes/chill-vibes/BDR%20RAINY%20DAY.mp4">'
                 videoBg[0].style.opacity = '0'
                 videoBg[1].style.opacity = '1'
                 if (typeWeather[2] != 2) {
@@ -303,7 +304,7 @@ const app = {
                 changeBgBtn.style.left = '34px'
                 changeBg.style.background = '#f3a952'
             } else {
-                videoBg[0].innerHTML = '<source src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20RAINY%20NIGHT.mp4">'
+                videoBg[0].innerHTML = '<source src="./assets/scenes/chill-vibes/BDR%20RAINY%20NIGHT.mp4">'
                 videoBg[0].style.opacity = '1'
                 videoBg[1].style.opacity = '0'
                 if (typeWeather[2] != 3) {
@@ -483,7 +484,7 @@ const app = {
         // Run
         app.render()
 
-        videoBg[1].innerHTML = '<source src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20STARRY%20NIGHT%20-.mp4">'
+        videoBg[1].innerHTML = '<source src="./assets/scenes/chill-vibes/BDR%20STARRY%20NIGHT%20-.mp4">'
     },
 }
 
