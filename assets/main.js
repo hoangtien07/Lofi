@@ -159,7 +159,6 @@ const app = {
             listMusic = Object.values(app.music)[index]
             prevType = index
             audio.innerHTML = `<source  src="${listMusic[historySong[indexMusic]].url}" type="audio/mp3">`
-            console.log(`${listMusic[historySong[indexMusic]].url}`)
         }
 
         typeMusic(0)
