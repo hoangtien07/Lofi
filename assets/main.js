@@ -358,7 +358,7 @@ const app = {
                 loader.className = "preload active";
             }, 500)
         }
-        loadVid("https://hoangtien07.github.io/Lofi/assets/scenes/chill-vibes/BDR%20DAY%20112521.mp4", removeLoader);
+        loadVid("./assets/scenes/chill-vibes/BDR%20Day%20112521.mp4", removeLoader);
 
         changeBgFunc()
 
