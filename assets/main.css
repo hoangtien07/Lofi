@@ -442,15 +442,15 @@ input {
 }
 
 #sub2 {
-    transform: translateY(0px);
+    transform: translateY(-10px);
 }
 
 #sub3 {
-    transform: translateY(30px);
+    transform: translateY(50px);
 }
 
 #sub4 {
-    transform: translateY(116px);
+    transform: translateY(110px);
 }
 
 .sub-mood {
