@@ -542,7 +542,7 @@ input {
     flex-basis: 50%;
 }
 
-.effect-volumn__input {
+.effect-volume__input {
     flex: 1;
     height: 24px;
     -webkit-appearance: none;
@@ -550,7 +550,7 @@ input {
     border-radius: 13px;
 }
 
-.effect-volumn__input::-webkit-slider-thumb {
+.effect-volume__input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 24px;

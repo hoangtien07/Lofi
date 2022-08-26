@@ -83,6 +83,9 @@
         border-radius: 0;
         z-index: 5;
     }
+    #sub2 {
+        transform: translateY(0px);
+    }
     #sub3 {
         transform: translateY(0px);
     }

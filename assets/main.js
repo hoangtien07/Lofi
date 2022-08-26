@@ -40,9 +40,9 @@ const typeItem = $$(".sub-mood__item");
 const subOpt = $$(".sub-opt");
 const exitSubBtn = $$(".sub-btn");
 
-// Decalre music input
+// Declare music input
 
-const mainMusicBtn = $("#ms-volumn__input");
+const mainMusicBtn = $("#ms-volume__input");
 const effectList = $("#effect-list");
 var loadMix = false;
 const mixBtn = $(".sub-footer");
@@ -787,27 +787,19 @@ const app = {
       audio.play();
     };
 
-    // End music and next
-
-    // audio.onended = function() {
-    //     indexMusic++
-    //     audio.innerHTML = `<source src="${listMusic[historySong[indexMusic+1]].url}" type="audio/mp3">`
-    //     audio.play()
-    // };
-
     // Create sound effect elements
     for (let e of app.effectMusic) {
       effectList.innerHTML += `
                 <div class="effect-item flex">
                 <div class="effect-name">${e.name}</div>
-                <input type="range" min="0" max="100" step="1" value="0" class="effect-volumn__input" id="${e.type}">
+                <input type="range" min="0" max="100" step="1" value="0" class="effect-volume__input" id="${e.type}">
                 <audio src="${e.url}" loop></audio>
                 </div>
                 `;
     }
 
     //Range sound effect
-    const inputRange = $$(".effect-volumn__input");
+    const inputRange = $$(".effect-volume__input");
     const audioEffectList = $$(".effect-item>audio");
 
     for (let i = 0; i < inputRange.length; i++) {
@@ -846,6 +838,7 @@ const app = {
       }
     };
 
+    // Mix mode
     mixBtn.onclick = () => {
       if (checkMix) {
         effectList.scrollTo(0, 0);
@@ -858,8 +851,7 @@ const app = {
     };
 
     // Change bg video
-
-    const typeWeather = [0, 0, 0]; // [0]: day/night, [1]: no rain/rain, [2]:prev weather:0-day,1-night,2-rainday,3-rainnight
+    const typeWeather = [0, 0, 0]; // [0]: day/night, [1]: no rain/rain, [2]:prev weather:0-day/1-night/2-rainday/3-rainnight
 
     function changeBgFunc() {
       if (typeWeather[0] == 0 && typeWeather[1] == 0) {
@@ -907,6 +899,7 @@ const app = {
       }
     }
 
+    // Declare audio in html
     var preVid = document.createElement("link");
     preVid.rel = "preload";
     preVid.as = "audio";
@@ -914,6 +907,7 @@ const app = {
     preVid.href = `${listMusic[historySong[indexMusic]].url}`;
     document.head.appendChild(preVid);
 
+    // Preload
     function loadVid(url, cFunction) {
       var xhttp;
       xhttp = new XMLHttpRequest();
@@ -935,8 +929,10 @@ const app = {
     }
     loadVid("./assets/scenes/chill-vibes/BDR%20Day%20112521.mp4", removeLoader);
 
+    // Set video background
     changeBgFunc();
 
+    // Light/dark mode button
     changeBg.onclick = () => {
       if (typeWeather[0] == 0) {
         typeWeather[0] = 1;
@@ -949,6 +945,7 @@ const app = {
       }
     };
 
+    // Rain background
     const rain = $("#rain_street");
     rain.oninput = function () {
       this.style.background =
@@ -960,7 +957,10 @@ const app = {
       if (this.value == 0) {
         audioEffectList[1].pause();
         typeWeather[1] = 0;
-        changeBgFunc();
+        this.onmouseup = () => {
+          changeBgFunc();
+        };
+        this.addEventListener("touchend", (e) => changeBgFunc(), true);
       } else {
         audioEffectList[1].play();
         audioEffectList[1].volume = this.value / 100;
@@ -968,6 +968,7 @@ const app = {
         this.onmouseup = () => {
           changeBgFunc();
         };
+        this.addEventListener("touchend", (e) => changeBgFunc(), true);
       }
     };
 
