@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon">
@@ -45,16 +44,16 @@
                         </div>
                     </div>
                     <div class="nav-btn" id="tutorial">How it works</div>
-                    <div class="nav-btn">Pricing</div>
+                    <!-- <div class="nav-btn">Pricing</div>
                     <div class="nav-btn">Contact us</div>
-                    <div class="nav-btn">More
-                        <div class="subnav">
+                    <div class="nav-btn">More -->
+                        <!-- <div class="subnav">
                             <div class="subnav-btn">About us</div>
                             <div class="subnav-btn">Submissions</div>
                             <div class="subnav-btn">Spotify</div>
                         </div>
-                    </div>
-                    <div class="nav-btn">Merch</div>
+                    </div> -->
+                    <!-- <div class="nav-btn">Merch</div> -->
                 </div>
                 <div class="action flex">
                     <button class="ant-switch" id="ant-switch" type="button" role="switch" aria-checked="false">
@@ -116,9 +115,21 @@
                 <button type="button" class="sub-btn">Close</button>
             </div>
             <div class="sub-opt" id="sub3">
-                <h4 class="title-sub">Change Set</h4>
-                <p class="sub-des">This feature is coming soon</p>
-                <button type="button" class="sub-btn">Close</button>
+                <h4 class="title-sub">Import Youtube Link</h4>
+                <p class="sub3-des" style="font-size: 12px;">* Nhạc YouTube và trình phát nhạc của website là riêng biệt.</p>
+                <p class="sub3-des" style="font-size: 12px;">* Một số link không phát được vì bản quyền</p>
+                <input type="text" class="sub3-input" placeholder="https://www.youtube.com/embed/...">
+                <div id="yt-music">
+                    <!-- <iframe width="100%" height="auto"
+                        src="https://www.youtube.com/embed/nG7OhR2Gix4?si=iUchn85gjc5b-KJW"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> -->
+                </div>
+                <div class="flex-between">
+                    <img src="./assets/img/Youtube-Logo-PNG.png" alt="Youtube" class="sub3-yt-logo">
+                    <button type="button" id="sub3-btn">Play</button>
+                </div>
             </div>
             <div class="sub-opt" id="sub4">
                 <h4 class="title-sub">Focus Mode</h4>

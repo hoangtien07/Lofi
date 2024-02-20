@@ -67,7 +67,11 @@ input {
     justify-content: center;
     align-items: center;
 }
-
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -125,6 +129,11 @@ input {
     margin-bottom: -20px;
 }
 
+.nav{
+    flex:1;
+    display: flex;
+    justify-content: end;
+}
 .nav-btn {
     min-width: unset;
     font-weight: 700;
@@ -449,6 +458,45 @@ input {
     transform: translateY(50px);
 }
 
+.sub3-des {
+    font-size: 12px;
+    width: 100%;
+    font-style: italic;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.sub3-input{
+    width: 100%;
+    height: 36px;
+    border: 1px solid #555;
+    background-color: inherit;
+    padding: 0 20px;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 18px;
+    margin-top: 8px;
+}
+.sub3-yt-logo{
+    height: 18px;
+    width: auto;
+}
+#sub3-btn{
+    width: 40%;
+    float: right;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    background: var(--color-primary);
+    text-align: center;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 22px;
+    transition: .3s ease;
+}
+
 #sub4 {
     transform: translateY(110px);
 }
@@ -501,12 +549,11 @@ input {
     height: 12px;
     width: auto;
     background: linear-gradient(to right, #f3a952 0%, #f3a952 44%, #14141d 44%, #14141d 100%);
-    -webkit-appearance: none;
+    appearance: none;
     border-radius: 6px;
 }
 
 .ms-volume__input::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
@@ -545,13 +592,13 @@ input {
 .effect-volume__input {
     flex: 1;
     height: 24px;
-    -webkit-appearance: none;
+    appearance: none;
     background: linear-gradient(to right, #f3a952 0%, #14141d 0%, #14141d 100%);
-    border-radius: 13px;
+    border-radius: 12px;
 }
 
 .effect-volume__input::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    border-radius: 12px;
     appearance: none;
     width: 24px;
     height: 24px;
@@ -560,63 +607,63 @@ input {
 }
 
 #city::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/city-active.a89e0974b172c63def766c8efa8aa4a3.svg');
+    background-image: url('../assets/svg/city-active.a89e0974.svg');
 }
 
 #rain_street::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/rain-city-active.2b132a63fb0086ec0538cc79af4c517b.svg');
+    background-image: url('../assets/svg/rain-city-active.2b132a63.svg');
 }
 
 #fireplace::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/fire-place-active.baaa219f0eb8eb06e6c72099446a9e4e.svg');
+    background-image: url('../assets/svg/fire-place-active.6c73e3d4.svg');
 }
 
 #fire::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/campfire-active.11ae9b1a3485737a764826c48a07e9c2.svg');
+    background-image: url('../assets/svg/campfire-active.11ae9b1a.svg');
 }
 
 #forest::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/forest-active.557577a78b80f7965253738d474c6d2d.svg');
+    background-image: url('../assets/svg/forest-active.557577a7.svg');
 }
 
 #rain_forest::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/rain-forest-active.c1cb0f00b09da7b8c99f2c08b86518b7.svg');
+    background-image: url('../assets/svg/rain-forest-active.c1cb0f00.svg');
 }
 
 #waves::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/waves-active.fc53117aac4189916a6f08a3d2a8f041.svg');
+    background-image: url('../assets/svg/waves-active.fc53117a.svg');
 }
 
 #fan::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/fan-active.5db5555fe1644cd72ab06a06f3d66084.svg');
+    background-image: url('../assets/svg/fan-active.5db5555f.svg');
 }
 
 #storm::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/summer-storm-active.a1d5ef8de55583e376fba2142fc95e1d.svg');
+    background-image: url('../assets/svg/summer-storm-active.a1d5ef8d.svg');
 }
 
 #river::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/river-active.4f66256fedb9980e464109b440435478.svg');
+    background-image: url('../assets/svg/river-active.4f66256f.svg');
 }
 
 #birds::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/bird-active.8e06b1c4b56b8003f84b4806ed0445f1.svg');
+    background-image: url('../assets/svg/bird-active.8e06b1c4.svg');
 }
 
 #people::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/people-active.8a5ffe7f094da5bd9cd747a31c0037cd.svg');
+    background-image: url('../assets/svg/people-active.8a5ffe7f.svg');
 }
 
 #wind::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/wind_active.84db9b23652a70df9c56094eea4b22f8.svg');
+    background-image: url('../assets/svg/wind_active.8c1a9559.svg');
 }
 
 #ocean::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media//ocean_active.137b8b66ed743c6f94f00c3a91d84f9d.svg');
+    background-image: url('../assets/svg/ocean_active.a822faff.svg');
 }
 
 #snow::-webkit-slider-thumb {
-    background: url('https://app.lofi.co//static/media/snow_active.65ac1341d33fc7b816701f0d4ba4e31a.svg');
+    background-image: url('../assets/svg/snow_active.6d21fdcc.svg');
 }
 
 .sub-footer {
@@ -749,4 +796,17 @@ input {
     display: block;
     height: 120px;
     width: auto;
+}
+
+/* Youtube Music */
+#yt-music{
+    display: none;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+#yt-music.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

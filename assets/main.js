@@ -63,212 +63,212 @@ const app = {
   music: {
     chill: [
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_1.mp3",
+        url: "../assets/tracks/chill/chill_01.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_2.mp3",
+        url: "../assets/tracks/chill/chill_02.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_3.mp3",
+        url: "../assets/tracks/chill/chill_03.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_4.mp3",
+        url: "../assets/tracks/chill/chill_04.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_5.mp3",
+        url: "../assets/tracks/chill/chill_05.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_6.mp3",
+        url: "../assets/tracks/chill/chill_06.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_7.mp3",
+        url: "../assets/tracks/chill/chill_07.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_8.mp3",
+        url: "../assets/tracks/chill/chill_08.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_9.mp3",
+        url: "../assets/tracks/chill/chill_09.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_10.mp3",
+        url: "../assets/tracks/chill/chill_10.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_11.mp3",
+        url: "../assets/tracks/chill/chill_11.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_12.mp3",
+        url: "../assets/tracks/chill/chill_12.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_13.mp3",
+        url: "../assets/tracks/chill/chill_13.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_14.mp3",
+        url: "../assets/tracks/chill/chill_14.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_15.mp3",
+        url: "../assets/tracks/chill/chill_15.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_16.mp3",
+        url: "../assets/tracks/chill/chill_16.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_17.mp3",
+        url: "../assets/tracks/chill/chill_17.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_18.mp3",
+        url: "../assets/tracks/chill/chill_18.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_19.mp3",
+        url: "../assets/tracks/chill/chill_19.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_20.mp3",
+        url: "../assets/tracks/chill/chill_20.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_21.mp3",
+        url: "../assets/tracks/chill/chill_21.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_22.mp3",
+        url: "../assets/tracks/chill/chill_22.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_23.mp3",
+        url: "../assets/tracks/chill/chill_23.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/chill/chill_24.mp3",
+        url: "../assets/tracks/chill/chill_24.mp3",
       },
     ],
     jazzy: [
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_1.mp3",
+        url: "../assets/tracks/jazzy/jazzy_01.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_2.mp3",
+        url: "../assets/tracks/jazzy/jazzy_02.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_3.mp3",
+        url: "../assets/tracks/jazzy/jazzy_03.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_4.mp3",
+        url: "../assets/tracks/jazzy/jazzy_04.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_5.mp3",
+        url: "../assets/tracks/jazzy/jazzy_05.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_6.mp3",
+        url: "../assets/tracks/jazzy/jazzy_06.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_7.mp3",
+        url: "../assets/tracks/jazzy/jazzy_07.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_8.mp3",
+        url: "../assets/tracks/jazzy/jazzy_08.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_9.mp3",
+        url: "../assets/tracks/jazzy/jazzy_09.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_10.mp3",
+        url: "../assets/tracks/jazzy/jazzy_10.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_11.mp3",
+        url: "../assets/tracks/jazzy/jazzy_11.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_12.mp3",
+        url: "../assets/tracks/jazzy/jazzy_12.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_13.mp3",
+        url: "../assets/tracks/jazzy/jazzy_13.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_14.mp3",
+        url: "../assets/tracks/jazzy/jazzy_14.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_15.mp3",
+        url: "../assets/tracks/jazzy/jazzy_15.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_16.mp3",
+        url: "../assets/tracks/jazzy/jazzy_16.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_17.mp3",
+        url: "../assets/tracks/jazzy/jazzy_17.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_18.mp3",
+        url: "../assets/tracks/jazzy/jazzy_18.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_19.mp3",
+        url: "../assets/tracks/jazzy/jazzy_19.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_20.mp3",
+        url: "../assets/tracks/jazzy/jazzy_20.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_21.mp3",
+        url: "../assets/tracks/jazzy/jazzy_21.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_22.mp3",
+        url: "../assets/tracks/jazzy/jazzy_22.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_23.mp3",
+        url: "../assets/tracks/jazzy/jazzy_23.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_24.mp3",
+        url: "../assets/tracks/jazzy/jazzy_24.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/jazzy/jazzy_25.mp3",
+        url: "../assets/tracks/jazzy/jazzy_25.mp3",
       },
     ],
     sleepy: [
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_1.mp3",
+        url: "../assets/tracks/sleepy/sleepy_01.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_2.mp3",
+        url: "../assets/tracks/sleepy/sleepy_02.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_3.mp3",
+        url: "../assets/tracks/sleepy/sleepy_03.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_4.mp3",
+        url: "../assets/tracks/sleepy/sleepy_04.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_5.mp3",
+        url: "../assets/tracks/sleepy/sleepy_05.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_6.mp3",
+        url: "../assets/tracks/sleepy/sleepy_06.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_7.mp3",
+        url: "../assets/tracks/sleepy/sleepy_07.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_8.mp3",
+        url: "../assets/tracks/sleepy/sleepy_08.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_9.mp3",
+        url: "../assets/tracks/sleepy/sleepy_09.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_10.mp3",
+        url: "../assets/tracks/sleepy/sleepy_10.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_11.mp3",
+        url: "../assets/tracks/sleepy/sleepy_11.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_12.mp3",
+        url: "../assets/tracks/sleepy/sleepy_12.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_13.mp3",
+        url: "../assets/tracks/sleepy/sleepy_13.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_14.mp3",
+        url: "../assets/tracks/sleepy/sleepy_14.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_15.mp3",
+        url: "../assets/tracks/sleepy/sleepy_15.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_16.mp3",
+        url: "../assets/tracks/sleepy/sleepy_16.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_17.mp3",
+        url: "../assets/tracks/sleepy/sleepy_17.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_18.mp3",
+        url: "../assets/tracks/sleepy/sleepy_18.mp3",
       },
       {
-        url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/tracks/sleepy/sleepy_19.mp3",
+        url: "../assets/tracks/sleepy/sleepy_19.mp3",
       },
     ],
   },
@@ -278,410 +278,80 @@ const app = {
     {
       type: "city",
       name: "City traffic",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/city_traffic.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/city_traffic.mp3",
     },
     {
       type: "rain_street",
       name: "City Rain",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/rain_city.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/rain_city.mp3",
     },
     {
       type: "fireplace",
       name: "Fireplace",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/fireplace.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/fireplace.mp3",
     },
     {
       type: "fire",
       name: "Campfire",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/campfire.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/campfire.mp3",
     },
     {
       type: "forest",
       name: "Forest Sounds",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/forest_night.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/forest_night.mp3",
     },
     {
       type: "rain_forest",
       name: "Forest Rain",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/rain_forest.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/rain_forest.mp3",
     },
     {
       type: "waves",
       name: "Waves",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/waves.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/waves.mp3",
     },
     {
       type: "fan",
       name: "Fan",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/fan.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/fan.mp3",
     },
     {
       type: "storm",
       name: "Summer Storm",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/summer_storm.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/summer_storm.mp3",
     },
     {
       type: "river",
       name: "River",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/river.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/river.mp3",
     },
     {
       type: "birds",
       name: "Bird Chirping",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/birds.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/birds.mp3",
     },
     {
       type: "people",
       name: "People Talking",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/people_talk_inside.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/people_talk_inside.mp3",
     },
     {
       type: "wind",
       name: "Wind",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/wind.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/wind.mp3",
     },
     {
       type: "ocean",
       name: "Ocean Sound",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/ocean.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/ocean.mp3",
     },
     {
       type: "snow",
       name: "Blizzard",
-      url: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/snow.mp3",
+      url: "https://lofico.nyc3.cdn.digitaloceanspaces.com/effects/snow.mp3",
     },
   ],
 
-  // Combo theme: music + sound effect
-  theme: {
-    forestInside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/inside.mp4",
-        rain_forest:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/inside-rain.mp4",
-        default_pixel:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/inside-pix.mp4",
-        rain_forest_pixel:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/inside-rain-pix.mp4",
-      },
-      actions: [
-        {
-          position: [70, 30],
-          title: "Forest Rain",
-          type: "sound",
-          effect: "rain_forest",
-        },
-        {
-          position: [15, 20],
-          title: "Bird chirping",
-          type: "sound",
-          effect: "birds",
-        },
-        { position: [15, 85], title: "Open mixer", type: "open-mixer" },
-      ],
-    },
-    forestOutside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/outside.mp4",
-        rain_forest:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/outside-rain.mp4",
-        default_pixel:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/outside-pix.mp4",
-        rain_forest_pixel:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/forest/outside-rain-pix.mp4",
-      },
-      actions: [
-        { position: [70, 70], title: "River", type: "sound", effect: "river" },
-        {
-          position: [10, 50],
-          title: "Bird chirping",
-          type: "sound",
-          effect: "birds",
-        },
-        {
-          position: [67, 12],
-          title: "Forest Rain",
-          type: "sound",
-          effect: "rain_forest",
-        },
-      ],
-    },
-    vanInside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/van/van.mp4",
-        rain_forest:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/van/van-rain.mp4",
-      },
-      actions: [
-        {
-          position: [50, 30],
-          title: "Forest Rain",
-          type: "sound",
-          effect: "rain_forest",
-        },
-        {
-          position: [55, 20],
-          title: "Forest Sound",
-          type: "sound",
-          effect: "forest",
-        },
-        { position: [80, 85], title: "Open mixer", type: "open-mixer" },
-      ],
-    },
-    vanOutside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/van/van-out.mp4",
-        fire: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/van/van-out-fire.mp4",
-      },
-      actions: [
-        {
-          position: [10, 20],
-          title: "Forest sound",
-          type: "sound",
-          effect: "forest",
-        },
-        {
-          position: [42, 78],
-          title: "Campfire sound",
-          type: "sound",
-          effect: "fire",
-        },
-        { position: [61, 78], title: "Open mixer", type: "open-mixer" },
-      ],
-    },
-    cafeInside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/inside.mp4",
-        default_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/inside-night.mp4",
-        rain_street_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/inside-night-rain.mp4",
-        rain_street:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/inside-rain.mp4",
-      },
-      actions: [
-        {
-          position: [20, 38],
-          title: "City Rain",
-          type: "sound",
-          effect: "rain_street",
-        },
-        {
-          position: [50, 70],
-          title: "People Talks",
-          type: "sound",
-          effect: "people",
-        },
-        { position: [26, 65], title: "Open mixer", type: "open-mixer" },
-      ],
-    },
-    cafeOutside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/outside.mp4",
-        rain_street:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/outside-rain.mp4",
-        default_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/outside-night.mp4",
-        rain_street_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/cafe/outside-night-rain.mp4",
-      },
-      actions: [
-        {
-          position: [75, 80],
-          title: "City Traffic",
-          type: "sound",
-          effect: "city",
-        },
-        {
-          position: [3, 35],
-          title: "City Rain",
-          type: "sound",
-          effect: "rain_street",
-        },
-        { position: [60, 65], title: "Open mixer", type: "open-mixer" },
-      ],
-    },
-    summerInside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/summer/summer.mp4",
-        storm:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/summer/summer-rain.mp4",
-      },
-      actions: [
-        {
-          position: [30, 25],
-          title: "Summer storm",
-          type: "sound",
-          effect: "storm",
-        },
-        { position: [65, 51], title: "Open mixer", type: "open-mixer" },
-        { position: [60, 45], title: "Fan", type: "sound", effect: "fan" },
-      ],
-    },
-    summerOutside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/summer/summer-out.mp4",
-        storm:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/summer/summer-out-rain.mp4",
-        default_pixel:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/summer/summer-out-pixel.mp4",
-        storm_pixel:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/summer/summer-out-rain-pixel.mp4",
-      },
-      actions: [
-        {
-          position: [75, 80],
-          title: "Sea Waves",
-          type: "sound",
-          effect: "waves",
-        },
-        {
-          position: [85, 15],
-          title: "Summer storm",
-          type: "sound",
-          effect: "storm",
-        },
-        { position: [19, 63], title: "Open mixer", type: "open-mixer" },
-      ],
-    },
-    oceanInside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/ocean/ocean-tales.mp4",
-        storm:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/ocean/ocean-tales-rain.mp4",
-      },
-      actions: [
-        { position: [8, 59], title: "Wind", type: "sound", effect: "wind" },
-        { position: [60, 70], title: "Open mixer", type: "open-mixer" },
-        {
-          position: [59, 31],
-          title: "Summer Storm",
-          type: "sound",
-          effect: "storm",
-        },
-      ],
-    },
-    oceanOutside: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/ocean/ocean-tales-out.mp4",
-        storm:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/ocean/ocean-tales-out-rain.mp4",
-      },
-      actions: [
-        { position: [8, 15], title: "Wind", type: "sound", effect: "wind" },
-        { position: [42, 64], title: "Ocean", type: "sound", effect: "ocean" },
-        {
-          position: [48, 13],
-          title: "Summer Storm",
-          type: "sound",
-          effect: "storm",
-        },
-      ],
-    },
-    lrBedRoom: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20Day%20112521%20%281%29.mp4",
-        rain_street:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20RAINY%20DAY.mp4",
-        default_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20STARRY%20NIGHT%20-.mp4",
-        rain_street_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20RAINY%20NIGHT.mp4",
-      },
-      actions: [
-        {
-          position: [82, 20],
-          title: "City Rain",
-          type: "sound",
-          effect: "rain_street",
-        },
-        {
-          position: [7, 18],
-          title: "City Traffic",
-          type: "sound",
-          effect: "city",
-        },
-      ],
-    },
-    lrLivingRoom: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/LVR%20Day%20112521.mp4",
-        rain_street:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/LVR%20RAINY%20DAY.mp4",
-        default_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/LVR%20STARRY%20NIGHT.mp4",
-        rain_street_night:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/LVR%20RAINY%20NIGHT.mp4",
-      },
-      actions: [
-        {
-          position: [40, 14],
-          title: "City Rain",
-          type: "sound",
-          effect: "rain_street",
-        },
-        {
-          position: [4, 68],
-          title: "Fireplace",
-          type: "sound",
-          effect: "fireplace",
-        },
-      ],
-    },
-    deskCity: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/study/city%20scene.mp4",
-      },
-      actions: [
-        { position: [44, 52.5], title: "Change place", type: "next-set" },
-        {
-          position: [40, 15],
-          title: "City Traffic",
-          type: "sound",
-          effect: "city",
-        },
-      ],
-    },
-    deskBeach: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/study/beach%20scene.mp4",
-      },
-      actions: [
-        { position: [44, 52.5], title: "Change place", type: "next-set" },
-        { position: [40, 15], title: "Waves", type: "sound", effect: "waves" },
-      ],
-    },
-    deskSnow: {
-      variants: {
-        default:
-          "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/study/snow%20scene%20wo%20snow.mp4",
-        snow: "https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/study/snow%20scene.mp4",
-      },
-      actions: [
-        { position: [44, 52.5], title: "Change place", type: "next-set" },
-        {
-          position: [40, 15],
-          title: "Blizzard",
-          type: "sound",
-          effect: "snow",
-        },
-      ],
-    },
-  },
   render: function () {
     // Khai báo biến
     const _this = this;
@@ -691,11 +361,11 @@ const app = {
       if (!checkPlayMusic) {
         checkPlayMusic = true;
         audio.play();
-        playBtn.innerHTML = `<img src="https://app.lofi.co/static/media/pause.ac7490b3bef8fffb1bfd2550201f4836.svg" alt="">`;
+        playBtn.innerHTML = `<img src="../assets/svg/pause.4ac70926.svg" alt="">`;
       } else {
         checkPlayMusic = false;
         audio.pause();
-        playBtn.innerHTML = `<img src="https://app.lofi.co/static/media/play.18d46dd90ca12db32170bea8b2d46404.svg" alt="">`;
+        playBtn.innerHTML = `<img src="../assets/svg/play.18d46dd9.svg" alt="">`;
       }
     };
 
@@ -754,7 +424,7 @@ const app = {
           e.classList.add("active");
           audio.load();
           audio.play();
-          playBtn.innerHTML = `<img src="https://app.lofi.co/static/media/pause.ac7490b3bef8fffb1bfd2550201f4836.svg" alt="">`;
+          playBtn.innerHTML = `<img src="../assets/svg/pause.4ac70926.svg" alt="">`;
         }
       };
     });
@@ -768,7 +438,7 @@ const app = {
         listMusic[historySong[indexMusic]].url
       }" type="audio/mp3">`;
       checkPlayMusic = true;
-      playBtn.innerHTML = `<img src="https://app.lofi.co/static/media/pause.ac7490b3bef8fffb1bfd2550201f4836.svg" alt="">`;
+      playBtn.innerHTML = `<img src="../assets/svg/pause.4ac70926.svg" alt="">`;
       audio.load();
       audio.play();
     };
@@ -782,7 +452,7 @@ const app = {
         listMusic[historySong[indexMusic]].url
       }" type="audio/mp3">`;
       checkPlayMusic = true;
-      playBtn.innerHTML = `<img src="https://app.lofi.co/static/media/pause.ac7490b3bef8fffb1bfd2550201f4836.svg" alt="">`;
+      playBtn.innerHTML = `<img src="../assets/svg/pause.4ac70926.svg" alt="">`;
       audio.load();
       audio.play();
     };
@@ -797,6 +467,10 @@ const app = {
                 </div>
                 `;
     }
+    document
+      .querySelectorAll(".effect-item")[1]
+      .querySelector(".effect-name").innerHTML +=
+      '  <i style="font-size: 12px">*(Effect)</i>';
 
     //Range sound effect
     const inputRange = $$(".effect-volume__input");
@@ -823,12 +497,12 @@ const app = {
       if (this.value == 0) {
         audio.pause();
         checkPlayMusic = false;
-        playBtn.innerHTML = `<img src="https://app.lofi.co/static/media/play.18d46dd90ca12db32170bea8b2d46404.svg" alt="">`;
+        playBtn.innerHTML = `<img src="../assets/svg/play.18d46dd9.svg" alt="">`;
       } else {
         audio.volume = this.value / 100;
         audio.play();
         checkPlayMusic = true;
-        playBtn.innerHTML = `<img src="https://app.lofi.co/static/media/pause.ac7490b3bef8fffb1bfd2550201f4836.svg" alt="">`;
+        playBtn.innerHTML = `<img src="../assets/svg/pause.4ac70926.svg" alt="">`;
         this.style.background =
           "linear-gradient(to right, #f3a952 0%, #f3a952 " +
           this.value +
@@ -838,7 +512,7 @@ const app = {
       }
     };
 
-    // Mix mode
+    // Mix mode increase height
     mixBtn.onclick = () => {
       if (checkMix) {
         effectList.scrollTo(0, 0);
@@ -1062,11 +736,24 @@ const app = {
       tutVid[0].load();
       tutVid[1].load();
     };
+
+    // Import Link Youtube
+    const ytDiv = $("#yt-music");
+    const ytLink = $(".sub3-input");
+    const ytBtn = $("#sub3-btn");
+    ytBtn.onclick = () => {
+      if (ytLink.value != "") {
+        ytDiv.innerHTML = `<iframe width="auto" height="auto" src="${ytLink.value}&autoplay=1&loop=1" frameborder="0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        ytLink.value = "";
+        ytDiv.classList.add("active");
+      }
+    }
   },
+  
   start: function () {
     // Set first html
     playBtn.innerHTML =
-      '<img src="https://app.lofi.co/static/media/play.18d46dd90ca12db32170bea8b2d46404.svg" alt="">';
+      '<img src="../assets/svg/play.18d46dd9.svg" alt="">';
     $("#chill").classList.add("active");
 
     // Run
