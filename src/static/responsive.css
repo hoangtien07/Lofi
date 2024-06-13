@@ -1,0 +1,124 @@
+@media (max-width:767px) {
+    /* Header */
+    .header {
+        padding: 0;
+        display: flex;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav {
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .nav-btn {
+        display: none;
+    }
+    #tutorial {
+        font-size: 16px;
+        display: block;
+    }
+    .action {
+        zoom: .8;
+    }
+    .header .logo {
+        height: 80px;
+    }
+    .header .logo img {
+        height: 80px;
+    }
+    .zoom-btn {
+        display: none;
+    }
+    .share-btn {
+        display: none;
+    }
+    .signUp-btn {
+        display: none;
+    }
+    .login-btn {
+        display: none;
+    }
+    /* Bg and option */
+    .bg-relative {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: scroll;
+    }
+    .option {
+        width: 100%;
+        flex-direction: row;
+        margin-right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .option-btn {
+        flex: 1;
+    }
+    .opt-border {
+        display: none;
+    }
+    .option__icon {
+        background-color: transparent;
+    }
+    #ob1 .option__icon {
+        border-radius: 0;
+    }
+    #ob4 .option__icon {
+        border-radius: 0;
+    }
+    .obh {
+        display: none !important;
+    }
+    .sub-opt {
+        position: fixed;
+        left: 0;
+        bottom: 70px;
+        width: 100%;
+        border-radius: 0;
+        z-index: 5;
+    }
+    #sub2 {
+        transform: translateY(0px);
+    }
+    #sub3 {
+        transform: translateY(0px);
+    }
+    #sub4 {
+        transform: translateY(0px);
+    }
+    #effect-list.active {
+        max-height: 260px;
+        overflow: scroll;
+    }
+    .title-sub {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 20px 0 15px 0;
+    }
+    .sub-des {
+        margin-top: 5px;
+    }
+    .tut__des {
+        padding: 0 16px;
+    }
+    .tut__item {
+        margin-bottom: 40px;
+    }
+    .tut-close {
+        margin: 0px 0 60px 0;
+    }
+    /* Control */
+    .control {
+        bottom: 82px;
+    }
+    /* Video Bg */
+    .main-video {
+        width: auto;
+    }
+}

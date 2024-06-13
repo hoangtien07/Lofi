@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Music</title>
+    <link rel="shortcut icon" href="../static/assets/logo/favicon.ico" type="image/x-icon">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Thư viện -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/responsive.css">
+</head>
+<body>
+    <div class="preload flex-center">
+        <img src="../static/assets/logo/logo.0cbf9e63.gif" class="preload__logo">
+    </div>
+    <div class="main">
+        <audio class="music"></audio>
+        <div class="bg-absolute">
+            <!-- Header -->
+            <div class="header flex">
+                <div class="logo"><img src="../static/assets/logo/logo.0cbf9e63.gif"></div>
+                <div class="nav flex">
+                    <div class="tutorial flex-col">
+                        <div class="tut__hd flex-center">
+                            <img src="../static/assets/logo/logo.0cbf9e63.gif" class="tut__hd-logo">
+                        </div>
+                        <div class="tut__main flex">
+                            <div class="tut__item">
+                                <video loop src="../static/assets/tutorial/Video 1 - Mixer.mp4" class="tut__vid"></video>
+                                <div class="tut__title">The Perfect Playlist<br>With One Click</div>
+                                <div class="tut__des">Hit play and get into the zone instantly. No ads. No distracting
+                                    lyrics.<br>3 Stations to suit your mood: chill, jazzy or sleepy.</div>
+                            </div>
+                            <div class="tut__item">
+                                <video loop src="../static/assets/tutorial/Video 4 - Mixer Environment.mp4"
+                                    class="tut__vid"></video>
+                                <div class="tut__title">Cut Out Distractions<br>With Peaceful Sounds</div>
+                                <div class="tut__des">Drown out even the noisiest neighbour with soothing background sounds.
+                                    Each artwork comes with adjustable sounds like rain, waves or birds. Some sounds change
+                                    the scene's visuals.</div>
+                            </div>
+                            <button type="button" class="tut-close">Close</button>
+                        </div>
+                    </div>
+                    <div class="nav-btn" id="tutorial">How it works</div>
+                    <!-- <div class="nav-btn">Pricing</div>
+                        <div class="nav-btn">Contact us</div>
+                        <div class="nav-btn">More -->
+                    <!-- <div class="subnav">
+                                <div class="subnav-btn">About us</div>
+                                <div class="subnav-btn">Submissions</div>
+                                <div class="subnav-btn">Spotify</div>
+                            </div>
+                        </div> -->
+                    <!-- <div class="nav-btn">Merch</div> -->
+                </div>
+                <!-- Button Sáng/Tối -->
+                <div class="action flex">
+                    <button class="ant-switch" id="ant-switch" type="button" role="switch" aria-checked="false">
+                        <div class="ant-switch__handle"></div>
+                        <div class="ant-switch__inner in-flex flex-center">
+                            <img src="../static/assets/svg/night.5e06c080.svg" alt="">
+                            <img src="../static/assets/svg/day.d259f96b.svg" alt="">
+                        </div>
+                    </button>
+                    <!-- -->
+                    <button class="zoom-btn">
+                        <img src="../static/assets/svg/fullscreen.a76b5d15.svg" alt="">
+                    </button>
+                    <button class="share-btn">Share</button>
+                    <button class="signUp-btn">Sign up</button>
+                    <button class="login-btn">Login</button>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- Video Background -->
+            <div class="bg-video">
+                <video loop class="main-video" muted="muted">
+                </video>
+            </div>
+            <div class="bg-video">
+                <video loop class="main-video" muted="muted">
+                </video>
+            </div>
+            <!-- Bộ điều khiển phát nhạc -->
+            <div class="control flex-center">
+                <div class="prev">
+                    <img src="../static/assets/svg/previous.3b347466.svg" alt="">
+                </div>
+                <div class="play">
+                </div>
+                <div class="next">
+                    <img src="../static/assets/svg/next.9551d6f2.svg" alt="">
+                </div>
+            </div>
+            <!-- Mixer -->
+            <div class="sub-opt" id="sub1">
+                <h4 class="title-sub">Mood</h4>
+                <div class="flex sub-mood">
+                    <div class="sub-mood__item flex-col flex-center" id="chill">
+                        <svg viewBox="0 0 394.382 394.382" class="sub-mood__svg">
+                            <path
+                                d="M170.519,107.736c1.022,0.695,2.222,1.063,3.47,1.063h0.015c3.41,0,6.184-2.772,6.184-6.181   c0-0.59-0.083-1.173-0.245-1.735c-3.516-15.401-1.852-27.804,4.947-36.863c8.039-10.709,11.599-24.452,9.523-36.759   c-1.833-10.911-7.698-19.979-16.952-26.217c-2.066-1.402-4.915-1.392-6.976,0.026c-2.107,1.449-3.094,3.999-2.514,6.506   c3.798,16.204,0.343,26.473-8.32,42.058c-5.407,9.727-7.616,20.652-6.219,30.766C155.015,91.84,160.932,101.298,170.519,107.736z" />
+                            <path
+                                d="M220.694,105.121c0.968,0.659,2.098,1.008,3.268,1.008h0.007c3.211,0,5.823-2.612,5.823-5.823   c0-0.544-0.076-1.084-0.227-1.607c-2.665-11.718-1.42-21.117,3.701-27.941c6.438-8.575,9.288-19.592,7.624-29.467   c-1.478-8.792-6.205-16.102-13.669-21.138c-1.94-1.31-4.567-1.326-6.576,0.04c-1.961,1.361-2.9,3.832-2.346,6.113   c2.893,12.339,0.24,20.195-6.402,32.141c-4.328,7.785-6.094,16.538-4.971,24.644C208.199,92.312,212.969,99.936,220.694,105.121z" />
+                            <path
+                                d="M320.6,162.422l-6.604-25.205c-1.864-7.115-9.087-12.69-16.443-12.69H96.83c-7.356,0-14.579,5.575-16.443,12.69   l-6.604,25.205c-0.969,3.697-0.31,7.392,1.808,10.136s5.524,4.318,9.345,4.318h4.689l17.839,197.022   c1.022,11.294,11.081,20.483,22.422,20.483h134.611c11.341,0,21.399-9.189,22.422-20.483l17.839-197.022h4.689   c3.821,0,7.228-1.574,9.345-4.318S321.569,166.12,320.6,162.422z M228.006,292.922c-20.199,24.766-50.398,33.638-67.421,19.739   c-12.914-10.552-14.502-31.118-5.735-51.264c2.821-6.405,6.615-12.823,11.484-18.768c2.1-2.612,4.41-4.922,6.72-7.179   c3.018-2.914,6.195-5.63,9.476-7.94c7.691-5.381,15.789-8.767,23.585-10.198c10.407-1.955,20.304-0.42,27.64,5.578   C250.816,236.789,248.204,268.117,228.006,292.922z" />
+                            <path
+                                d="M223.459,240.238c-1.532-0.663-4.713-1.774-8.809-1.774c-5.612,0-11.037,2.111-15.683,6.103   c-4.57,3.92-8.526,9.813-11.757,17.509c-1.405,3.339-2.511,6.436-3.474,9.733c-4.354,12.137-10.543,13.764-11.744,13.967   c-2.795,0.474-4.083,2.461-4.357,4.163c-0.336,2.088,0.72,4.169,2.619,5.175c1.225,0.652,4.542,2.168,8.893,2.169c0,0,0,0,0.001,0   c6.92,0,16.651-3.682,23.712-21.212l0.926-2.306c7.382-18.389,8.516-21.215,18.976-23.925c2.13-0.549,3.675-2.366,3.844-4.521   C226.776,243.133,225.542,241.139,223.459,240.238z" />
+                        </svg>
+                        <p class="sub-mood__title">Chill</p>
+                    </div>
+                    <div class="sub-mood__item flex-col flex-center" id="jazzy">
+                        <svg viewBox="0 0 511.999 511.999" class="sub-mood__svg">
+                            <g>
+                                <path
+                                    d="M448.763,331.378L301.897,176.644c-6.596-6.95-17.578-7.237-24.527-0.639c-6.95,6.596-7.237,17.577-0.639,24.527    l1.203,1.267c-58.645,77.317-30.627,205.8-51.371,206.163c-13.492,0.237-11.748-17.188-12.664-18.044    c-0.385,0.363-4.843-61.502-4.882-62.029C187.893,40.337,196.596,48.3,184.154,27.634c-20.398-34.581-74.72-38.629-101.78-1.157    c-8.999,14.269-9.133,24.849-9.361,39.378c-8.243,1.344-14.542,8.479-14.542,17.102c0,9.582,7.768,17.349,17.349,17.349h27.758    c9.582,0,17.349-7.768,17.349-17.349c0-8.383-5.945-15.377-13.85-16.996c0.45-5.198,1.274-9.306,2.187-11.727    c2.299-6.978,8.096-17.06,21.633-17.136c6.915-0.039,16.534,6.727,17.788,21.184c1.458,17.572,0.842,31.673,0.058,104.672h-15.48    c-9.582,0-17.349,7.768-17.349,17.349c0,9.581,7.768,17.349,17.349,17.349h13.853c-1.152,17.285-0.787,12.039-1.839,26.601    h-15.514c-0.307-9.311-7.934-16.771-17.32-16.771c-9.582,0-17.349,7.768-17.349,17.349v33.895c0,9.582,7.768,17.349,17.349,17.349    c9.506,0,17.216-7.648,17.338-17.125h12.979c-3.448,47.361-5.951,80.832-9.492,128.172c-0.011-0.12,0.01,2.124-0.008,1.317    c-1.06,16.796-2.502,46.563,6.363,63.662c7.518,20.241,20.072,35.531,42.216,47.421c86.167,46.264,161.757-49.968,171.469-64.583    c25.481-41.021,53.004-67.521,69.048-80.983l1.24,1.306c3.411,3.594,7.994,5.406,12.586,5.406c4.288,0,8.586-1.581,11.941-4.767    C455.072,349.308,455.359,338.328,448.763,331.378z" />
+                            </g>
+                        </svg>
+                        <p class="sub-mood__title">Jazzy</p>
+                    </div>
+                    <div class="sub-mood__item flex-col flex-center" id="sleepy">
+                        <svg viewBox="0 0 512 512" class="sub-mood__svg">
+                            <g>
+                                <path
+                                    d="M256,0C114.616,0,0,114.616,0,256s114.616,256,256,256s256-114.616,256-256C370.616,256,256,141.384,256,0z" />
+                            </g>
+                        </svg>
+                        <p class="sub-mood__title">Sleepy</p>
+                    </div>
+                </div>
+                <div class="flex music-volume">
+                    <img src="../static/assets/svg/volume_low.b33e70b7.svg" class="ms-volume__icon filter-svg">
+                    <input type="range" min="0" max="100" step="1" value="44" class="ms-volume__input"
+                        id="ms-volume__input">
+                    <img src="../static/assets/svg/volume.c87198cb.svg" class="ms-volume__icon filter-svg">
+                </div>
+                <h4 class="title-sub">Background noises</h4>
+                <div class="flex-col effect-volume" id="effect-list">
+                </div>
+                <div class="sub-footer">Mix Mode</div>
+            </div>
+            <!-- End Mixer -->
+            <!-- Lưu template -->
+            <div class="sub-opt" id="sub2">
+                <h4 class="title-sub">Templates</h4>
+                <div class="flex-between sub2-title">
+                    <div class="temp-option active" id="temp-scenes">Khung cảnh</div>
+                    <div class="temp-option" id="temp-like">Đã lưu</div>
+                </div>
+                <div id="temp-body">
+                    <div class="scenes active">
+                        <div class="temp-item active" id="temp1">
+                            <img src="../static/assets/scenes/chill-vibes/ChillPreview.png" alt="1" class="temp-img">
+                        </div>
+                        <div class="temp-item" id="temp2">
+                            <img src="../static/assets/scenes/studio/StudioPreview.png" alt="2" class="temp-img">
+                        </div>
+                    </div>
+                    <div class="saveTemp">
+                        <!-- <p class="sub-des">Bạn chưa lưu templates nào</p> -->
+                        <button type="button" class="sub-btn" id="saveAdd">Thêm</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Import Youtube Link -->
+            <div class="sub-opt" id="sub3">
+                <h4 class="title-sub">Import Youtube Link</h4>
+                <p class="sub3-des" style="font-size: 12px;">* Nhạc YouTube và trình phát nhạc của website là riêng biệt.
+                </p>
+                <p class="sub3-des" style="font-size: 12px;">* Một số link không phát được vì bản quyền</p>
+                <input type="text" class="sub3-input" placeholder="https://www.youtube.com/embed/...">
+                <div id="yt-music">
+                    <!-- <iframe width="100%" height="auto"
+                            src="https://www.youtube.com/embed/nG7OhR2Gix4?si=iUchn85gjc5b-KJW"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe> -->
+                </div>
+                <div class="flex-between">
+                    <img src="../static/assets/img/Youtube-Logo-PNG.png" alt="Youtube" class="sub3-yt-logo">
+                    <button type="button" id="sub3-btn">Play</button>
+                </div>
+            </div>
+            <!-- Focus Mode -->
+            <div class="sub-opt" id="sub4">
+                <h4 class="title-sub">Focus Mode</h4>
+                <!-- <p class="sub-des">This feature is coming soon</p> -->
+                <div class="todo">
+                    <div class="flex todo-add">
+                        <i class="fa-solid fa-list-check"></i>
+                        <input type="text" class="todo-input" placeholder="Add a new task">
+                        <button class="todo-btn" type="button" onclick="todoAdd()">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <ul class="todo-body">
+                    </ul>
+                </div>
+                <!-- <button type="button" class="sub-btn sub-btn__exit">Close</button> -->
+            </div>
+            <!-- HTML thanh công cụ -->
+            <div class="option flex-col flex-center">
+                <div class="option-btn" id="ob1">
+                    <img src="../static/assets/svg/lateral_bottom.849fd226.svg" alt="" class="obh">
+                    <i class="fas fa-sliders-h option__icon"></i>
+                    <div class="opt-border"></div>
+                </div>
+                <div class="option-btn" id="ob2">
+                    <i class="far fa-map option__icon"></i>
+                    <div class="opt-border"></div>
+                </div>
+                <div class="option-btn" id="ob3">
+                    <i class="fas fa-film option__icon"></i>
+                    <div class="opt-border"></div>
+                </div>
+                <div class="option-btn" id="ob4">
+                    <img src="../static/assets/svg/lateral_bottom.849fd226.svg" alt="" class="obh">
+                    <i class="far fa-dot-circle option__icon"></i>
+                </div>
+            </div>
+            <!-- End HTML thanh công cụ -->
+            <!-- AI button -->
+            <div class="ai-btn flex" id="ai-btn">
+                <img src="../static/assets/img/AI-gif.gif" alt="" class="ai-logo">
+                <div class="ai-btn__text">Chat with AI Lofi</div>
+            </div>
+            <!-- AI messages -->
+            <div class="ai-msg flex-center">
+                <div class="chat">
+                    <div class="contact bar">
+                        <div class="pic stark"></div>
+                        <div class="name">
+                            Gemini Chat
+                        </div>
+                    </div>
+                    <div class="messages" id="chat">
+                        <div class="time">
+                            Status: Active
+                        </div>
+    
+                        {% if output %}
+                        {% for key, value in output.items() %}
+                        <div class="message parker">
+                            <span class="message-text">{{ key }}</span>
+                            <button class="delete-btn" onclick="deleteMessage(this)"><i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="message stark">
+                            {% if value == '...' %}
+                            <span class="loading">...</span>
+                            {% else %}
+                            {{ value }}
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <div class="message stark">
+                            Chào bạn, mình có thể giúp được gì?
+                        </div>
+                        {% endif %}
+                    </div>
+    
+                    <form class="form" id="form">
+                        <div class="input">
+                            <input placeholder="Viết tin nhắn tại đây!" type="text" id="ask" name="ask">
+                            <button type="submit" class="fas fa-share"></button>
+                        </div>
+                    </form>
+    
+                    <div class="clear-btn">
+                        <button class="clear-history-btn" onclick="clearHistory()"><i class="fas fa-trash-alt"></i> Clear
+                            History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- partial -->
+<script src="../static/script.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#form').submit(function (event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+            $('#chat').append('<div class="message parker"><span class="message-text">' + $('#ask').val() + '</span><button class="delete-btn" onclick="deleteMessage(this)"><i class="fas fa-trash"></i></button></div><div class="message stark load"><span class="loading">...</span></div>');
+            $(this).trigger("reset");
+            scrollToBottom();
+            $.ajax({
+                type: 'POST',
+                url: '/chat',
+                data: formData,
+                dataType: 'json',
+                success: function (response) {
+                    if (response.status === 'success') {
+                        $('.stark.load').remove();
+                        var outputMessage = '<div class="message stark">' + response.output + '</div>';
+                        $('#chat').append(outputMessage);
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert('There was an error connecting to the server.');
+                },
+                complete: function () {
+                    scrollToBottom();
+                }
+            });
+        });
+        
+        window.onload = function () {
+            scrollToBottom();
+        };
+    });
+
+    function deleteMessage(button) {
+        $(button).parent().next('.message').remove();
+        $(button).parent().remove();
+        scrollToBottom();
+    }
+
+    function scrollToBottom() {
+        $('#chat').scrollTop($('#chat')[0].scrollHeight);
+    }
+
+    function clearHistory() {
+        console.log('clear history');
+        $.ajax({
+            type: 'GET',
+            url: '/clear-session',
+            dataType: 'json',
+            success: function (response) {        
+                if (response.status === 'success') {
+                    $('#chat').empty();
+                    var outputMessage = '<div class="time">Status: Active</div ><div class="message stark">Chào bạn, mình có thể giúp được gì?</div>';
+                    $('#chat').append(outputMessage);
+                } else {
+                    alert(response.message);
+                }
+            },
+            error: function () {
+                alert('There was an error connecting to the server.');
+            }
+        });
+    }
+    
+</script>
+<script>
+    window.addEventListener('beforeunload', function (event) {
+        // Use AJAX to call a route in your Flask app
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/clear-session', false);
+        xhr.send();
+    });
+</script>
+</body>
+</html>
