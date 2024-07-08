@@ -1,7 +1,7 @@
 # Quick start
 
-venv\Scripts\activate
-python src/app.py
+``` venv\Scripts\activate ```
+``` python src/app.py ```
 
 # Gemini Chat-Bot
 
